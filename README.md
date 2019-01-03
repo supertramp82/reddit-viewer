@@ -1,4 +1,4 @@
-# reddit-viewer"
+# reddit-viewer
 
 The hierarchy
 
@@ -6,6 +6,6 @@ The hierarchy
   - Title
   - Url
   - Thumbnail (if exists)
-  - author
+  - Author
   - TimeCreated
   - Comments/Url

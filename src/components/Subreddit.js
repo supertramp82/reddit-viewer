@@ -6,6 +6,7 @@ import Thumbnail from './Thumbnail';
 import Comments from './Comments';
 import Time from './Time';
 import Url from './Url';
+import Author from './Author';
 
 function Subreddit() {
   return (
@@ -16,6 +17,7 @@ function Subreddit() {
       <Comments />
       <Time />
       <Url />
+      <Author />
     </div>
   );
 }
