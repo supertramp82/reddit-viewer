@@ -1,7 +1,11 @@
 import React from 'react';
 
-function Url() {
-  return <div className="url">Url</div>;
+function Url({ url }) {
+  return (
+    <div className="url">
+      <a href={url}>{url}</a>
+    </div>
+  );
 }
 
 export default Url;
