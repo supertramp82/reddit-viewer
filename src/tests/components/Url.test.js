@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactShallowRenderer from 'react-test-renderer/shallow';
 import Url from '../../components/Url';
+import { shallow } from 'enzyme';
 
 test('should render Url correctly', () => {
-  const renderer = new ReactShallowRenderer();
-  renderer.render(<Url url="http://www.test.com" />);
+  const wrapper = shallow(<Url url="http://test.com" />);
 
-  expect(renderer.getRenderOutput()).toMatchSnapshot();
+  expect(wrapper).toMatchSnapshot();
 });
