@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Url correctly 1`] = `
+<div
+  className="url"
+>
+  <a
+    href="http://www.test.com"
+  >
+    http://www.test.com
+  </a>
+</div>
+`;
