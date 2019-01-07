@@ -15,3 +15,8 @@ The hierarchy
 Added Redux to be able transfering Feeds selection information down to the Reddit url inside Subreddit component
 
 Added Jest and Enzyme libraries to test available functionality
+
+Things to do:
+
+- more testing coverage
+- replace axios with RxJs using interval() to update the feed - the advantages of RxJs - usage of the same observable and ability to cancel or retry 

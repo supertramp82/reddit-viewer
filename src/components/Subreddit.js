@@ -25,9 +25,9 @@ class Subreddit extends React.Component {
     let feed = this.props.feed;
 
     this.getReddit();
-    // this.interval = setInterval(() => {
-    //   this.getReddit();
-    // }, 5000);
+    this.interval = setInterval(() => {
+      this.getReddit();
+    }, 1000);
   }
 
   componentWillUpdate() {}
@@ -44,11 +44,7 @@ class Subreddit extends React.Component {
           feed ? feed : 'news'
         }/search.json?q=news&restrict_sr=1`
       )
-      // .then(res => {
-      //   return res.json();
-      // })
       .then(res => {
-        // console.log(res);
         this.setState({
           subs: res.data.data.children,
         });
@@ -58,7 +54,7 @@ class Subreddit extends React.Component {
   }
 
   componentWillUnmount() {
-    // clearInterval(this.interval);
+     clearInterval(this.interval);
   }
 
   render() {
